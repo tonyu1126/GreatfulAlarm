@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61153441BEE1C0F00655F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153431BEE1C0F00655F71 /* AppDelegate.swift */; };
+		D61153461BEE1C0F00655F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153451BEE1C0F00655F71 /* ViewController.swift */; };
+		D61153491BEE1C0F00655F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61153471BEE1C0F00655F71 /* Main.storyboard */; };
+		D611534B1BEE1C0F00655F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D611534A1BEE1C0F00655F71 /* Assets.xcassets */; };
+		D611534E1BEE1C0F00655F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */; };
+		D61153591BEE1C0F00655F71 /* GreatfulAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153581BEE1C0F00655F71 /* GreatfulAlarmTests.swift */; };
+		D61153641BEE1C0F00655F71 /* GreatfulAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153631BEE1C0F00655F71 /* GreatfulAlarmUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D61153551BEE1C0F00655F71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61153381BEE1C0F00655F71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D611533F1BEE1C0F00655F71;
+			remoteInfo = GreatfulAlarm;
+		};
+		D61153601BEE1C0F00655F71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61153381BEE1C0F00655F71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D611533F1BEE1C0F00655F71;
+			remoteInfo = GreatfulAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D61153401BEE1C0F00655F71 /* GreatfulAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatfulAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61153431BEE1C0F00655F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D61153451BEE1C0F00655F71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D61153481BEE1C0F00655F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D611534A1BEE1C0F00655F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D611534D1BEE1C0F00655F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D611534F1BEE1C0F00655F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61153541BEE1C0F00655F71 /* GreatfulAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreatfulAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61153581BEE1C0F00655F71 /* GreatfulAlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatfulAlarmTests.swift; sourceTree = "<group>"; };
+		D611535A1BEE1C0F00655F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D611535F1BEE1C0F00655F71 /* GreatfulAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreatfulAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61153631BEE1C0F00655F71 /* GreatfulAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatfulAlarmUITests.swift; sourceTree = "<group>"; };
+		D61153651BEE1C0F00655F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D611533D1BEE1C0F00655F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61153511BEE1C0F00655F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D611535C1BEE1C0F00655F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D61153371BEE1C0F00655F71 = {
+			isa = PBXGroup;
+			children = (
+				D61153421BEE1C0F00655F71 /* GreatfulAlarm */,
+				D61153571BEE1C0F00655F71 /* GreatfulAlarmTests */,
+				D61153621BEE1C0F00655F71 /* GreatfulAlarmUITests */,
+				D61153411BEE1C0F00655F71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D61153411BEE1C0F00655F71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D61153401BEE1C0F00655F71 /* GreatfulAlarm.app */,
+				D61153541BEE1C0F00655F71 /* GreatfulAlarmTests.xctest */,
+				D611535F1BEE1C0F00655F71 /* GreatfulAlarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61153421BEE1C0F00655F71 /* GreatfulAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				D61153431BEE1C0F00655F71 /* AppDelegate.swift */,
+				D61153451BEE1C0F00655F71 /* ViewController.swift */,
+				D61153471BEE1C0F00655F71 /* Main.storyboard */,
+				D611534A1BEE1C0F00655F71 /* Assets.xcassets */,
+				D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */,
+				D611534F1BEE1C0F00655F71 /* Info.plist */,
+			);
+			path = GreatfulAlarm;
+			sourceTree = "<group>";
+		};
+		D61153571BEE1C0F00655F71 /* GreatfulAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				D61153581BEE1C0F00655F71 /* GreatfulAlarmTests.swift */,
+				D611535A1BEE1C0F00655F71 /* Info.plist */,
+			);
+			path = GreatfulAlarmTests;
+			sourceTree = "<group>";
+		};
+		D61153621BEE1C0F00655F71 /* GreatfulAlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D61153631BEE1C0F00655F71 /* GreatfulAlarmUITests.swift */,
+				D61153651BEE1C0F00655F71 /* Info.plist */,
+			);
+			path = GreatfulAlarmUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D611533F1BEE1C0F00655F71 /* GreatfulAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61153681BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarm" */;
+			buildPhases = (
+				D611533C1BEE1C0F00655F71 /* Sources */,
+				D611533D1BEE1C0F00655F71 /* Frameworks */,
+				D611533E1BEE1C0F00655F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreatfulAlarm;
+			productName = GreatfulAlarm;
+			productReference = D61153401BEE1C0F00655F71 /* GreatfulAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D61153531BEE1C0F00655F71 /* GreatfulAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D611536B1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmTests" */;
+			buildPhases = (
+				D61153501BEE1C0F00655F71 /* Sources */,
+				D61153511BEE1C0F00655F71 /* Frameworks */,
+				D61153521BEE1C0F00655F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61153561BEE1C0F00655F71 /* PBXTargetDependency */,
+			);
+			name = GreatfulAlarmTests;
+			productName = GreatfulAlarmTests;
+			productReference = D61153541BEE1C0F00655F71 /* GreatfulAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D611535E1BEE1C0F00655F71 /* GreatfulAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D611536E1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmUITests" */;
+			buildPhases = (
+				D611535B1BEE1C0F00655F71 /* Sources */,
+				D611535C1BEE1C0F00655F71 /* Frameworks */,
+				D611535D1BEE1C0F00655F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61153611BEE1C0F00655F71 /* PBXTargetDependency */,
+			);
+			name = GreatfulAlarmUITests;
+			productName = GreatfulAlarmUITests;
+			productReference = D611535F1BEE1C0F00655F71 /* GreatfulAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D61153381BEE1C0F00655F71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Yuta Tanimura";
+				TargetAttributes = {
+					D611533F1BEE1C0F00655F71 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D61153531BEE1C0F00655F71 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D611533F1BEE1C0F00655F71;
+					};
+					D611535E1BEE1C0F00655F71 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D611533F1BEE1C0F00655F71;
+					};
+				};
+			};
+			buildConfigurationList = D611533B1BEE1C0F00655F71 /* Build configuration list for PBXProject "GreatfulAlarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D61153371BEE1C0F00655F71;
+			productRefGroup = D61153411BEE1C0F00655F71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D611533F1BEE1C0F00655F71 /* GreatfulAlarm */,
+				D61153531BEE1C0F00655F71 /* GreatfulAlarmTests */,
+				D611535E1BEE1C0F00655F71 /* GreatfulAlarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D611533E1BEE1C0F00655F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D611534E1BEE1C0F00655F71 /* LaunchScreen.storyboard in Resources */,
+				D611534B1BEE1C0F00655F71 /* Assets.xcassets in Resources */,
+				D61153491BEE1C0F00655F71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61153521BEE1C0F00655F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D611535D1BEE1C0F00655F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D611533C1BEE1C0F00655F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61153461BEE1C0F00655F71 /* ViewController.swift in Sources */,
+				D61153441BEE1C0F00655F71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61153501BEE1C0F00655F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61153591BEE1C0F00655F71 /* GreatfulAlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D611535B1BEE1C0F00655F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61153641BEE1C0F00655F71 /* GreatfulAlarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D61153561BEE1C0F00655F71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D611533F1BEE1C0F00655F71 /* GreatfulAlarm */;
+			targetProxy = D61153551BEE1C0F00655F71 /* PBXContainerItemProxy */;
+		};
+		D61153611BEE1C0F00655F71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D611533F1BEE1C0F00655F71 /* GreatfulAlarm */;
+			targetProxy = D61153601BEE1C0F00655F71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D61153471BEE1C0F00655F71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61153481BEE1C0F00655F71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D611534D1BEE1C0F00655F71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D61153661BEE1C0F00655F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D61153671BEE1C0F00655F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D61153691BEE1C0F00655F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GreatfulAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D611536A1BEE1C0F00655F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GreatfulAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D611536C1BEE1C0F00655F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GreatfulAlarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreatfulAlarm.app/GreatfulAlarm";
+			};
+			name = Debug;
+		};
+		D611536D1BEE1C0F00655F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GreatfulAlarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreatfulAlarm.app/GreatfulAlarm";
+			};
+			name = Release;
+		};
+		D611536F1BEE1C0F00655F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GreatfulAlarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GreatfulAlarm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D61153701BEE1C0F00655F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GreatfulAlarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutatanimura.GreatfulAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GreatfulAlarm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D611533B1BEE1C0F00655F71 /* Build configuration list for PBXProject "GreatfulAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61153661BEE1C0F00655F71 /* Debug */,
+				D61153671BEE1C0F00655F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61153681BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61153691BEE1C0F00655F71 /* Debug */,
+				D611536A1BEE1C0F00655F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D611536B1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D611536C1BEE1C0F00655F71 /* Debug */,
+				D611536D1BEE1C0F00655F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D611536E1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D611536F1BEE1C0F00655F71 /* Debug */,
+				D61153701BEE1C0F00655F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D61153381BEE1C0F00655F71 /* Project object */;
+}
