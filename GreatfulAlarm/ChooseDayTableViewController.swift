@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChooseDayController : UITableViewController{
+class ChooseOptionTableViewController : UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationItem.title = "Choose Days of the week"
