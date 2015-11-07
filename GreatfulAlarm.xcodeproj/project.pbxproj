@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D61153441BEE1C0F00655F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153431BEE1C0F00655F71 /* AppDelegate.swift */; };
-		D61153461BEE1C0F00655F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153451BEE1C0F00655F71 /* ViewController.swift */; };
-		D61153491BEE1C0F00655F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61153471BEE1C0F00655F71 /* Main.storyboard */; };
 		D611534B1BEE1C0F00655F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D611534A1BEE1C0F00655F71 /* Assets.xcassets */; };
 		D611534E1BEE1C0F00655F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */; };
 		D61153591BEE1C0F00655F71 /* GreatfulAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153581BEE1C0F00655F71 /* GreatfulAlarmTests.swift */; };
 		D61153641BEE1C0F00655F71 /* GreatfulAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61153631BEE1C0F00655F71 /* GreatfulAlarmUITests.swift */; };
+		D683B6DE1BEE1D1600D2B039 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6DD1BEE1D1600D2B039 /* AlarmListCell.swift */; };
+		D683B6E01BEE1D2600D2B039 /* AlarmListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6DF1BEE1D2600D2B039 /* AlarmListCellModel.swift */; };
+		D683B6E21BEE1D3400D2B039 /* AlarmModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6E11BEE1D3400D2B039 /* AlarmModelManager.swift */; };
+		D683B6E41BEE1D3D00D2B039 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6E31BEE1D3D00D2B039 /* AlarmListViewController.swift */; };
+		D683B6E61BEE1D4700D2B039 /* ChooseDayController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683B6E51BEE1D4700D2B039 /* ChooseDayController.storyboard */; };
+		D683B6E81BEE1D4E00D2B039 /* GAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6E71BEE1D4E00D2B039 /* GAUtils.swift */; };
+		D683B6EA1BEE1D5900D2B039 /* ChooseDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6E91BEE1D5900D2B039 /* ChooseDayController.swift */; };
+		D683B6EC1BEE1D5F00D2B039 /* SetAlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683B6EB1BEE1D5F00D2B039 /* SetAlarmDetailViewController.swift */; };
+		D683B6EF1BEE1D6D00D2B039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683B6ED1BEE1D6D00D2B039 /* Main.storyboard */; };
+		D683B6F11BEE1D9800D2B039 /* SetAlarmDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683B6F01BEE1D9800D2B039 /* SetAlarmDetailViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +44,6 @@
 /* Begin PBXFileReference section */
 		D61153401BEE1C0F00655F71 /* GreatfulAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatfulAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61153431BEE1C0F00655F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D61153451BEE1C0F00655F71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D61153481BEE1C0F00655F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D611534A1BEE1C0F00655F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D611534D1BEE1C0F00655F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D611534F1BEE1C0F00655F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 		D611535F1BEE1C0F00655F71 /* GreatfulAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreatfulAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61153631BEE1C0F00655F71 /* GreatfulAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatfulAlarmUITests.swift; sourceTree = "<group>"; };
 		D61153651BEE1C0F00655F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D683B6DD1BEE1D1600D2B039 /* AlarmListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		D683B6DF1BEE1D2600D2B039 /* AlarmListCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListCellModel.swift; sourceTree = "<group>"; };
+		D683B6E11BEE1D3400D2B039 /* AlarmModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmModelManager.swift; sourceTree = "<group>"; };
+		D683B6E31BEE1D3D00D2B039 /* AlarmListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		D683B6E51BEE1D4700D2B039 /* ChooseDayController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseDayController.storyboard; sourceTree = "<group>"; };
+		D683B6E71BEE1D4E00D2B039 /* GAUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAUtils.swift; sourceTree = "<group>"; };
+		D683B6E91BEE1D5900D2B039 /* ChooseDayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseDayController.swift; sourceTree = "<group>"; };
+		D683B6EB1BEE1D5F00D2B039 /* SetAlarmDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAlarmDetailViewController.swift; sourceTree = "<group>"; };
+		D683B6EE1BEE1D6D00D2B039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D683B6F01BEE1D9800D2B039 /* SetAlarmDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetAlarmDetailViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +114,16 @@
 			isa = PBXGroup;
 			children = (
 				D61153431BEE1C0F00655F71 /* AppDelegate.swift */,
-				D61153451BEE1C0F00655F71 /* ViewController.swift */,
-				D61153471BEE1C0F00655F71 /* Main.storyboard */,
+				D683B6DF1BEE1D2600D2B039 /* AlarmListCellModel.swift */,
+				D683B6E11BEE1D3400D2B039 /* AlarmModelManager.swift */,
+				D683B6E31BEE1D3D00D2B039 /* AlarmListViewController.swift */,
+				D683B6DD1BEE1D1600D2B039 /* AlarmListCell.swift */,
+				D683B6ED1BEE1D6D00D2B039 /* Main.storyboard */,
+				D683B6E51BEE1D4700D2B039 /* ChooseDayController.storyboard */,
+				D683B6F01BEE1D9800D2B039 /* SetAlarmDetailViewController.storyboard */,
+				D683B6E91BEE1D5900D2B039 /* ChooseDayController.swift */,
+				D683B6E71BEE1D4E00D2B039 /* GAUtils.swift */,
+				D683B6EB1BEE1D5F00D2B039 /* SetAlarmDetailViewController.swift */,
 				D611534A1BEE1C0F00655F71 /* Assets.xcassets */,
 				D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */,
 				D611534F1BEE1C0F00655F71 /* Info.plist */,
@@ -230,8 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D611534E1BEE1C0F00655F71 /* LaunchScreen.storyboard in Resources */,
+				D683B6E61BEE1D4700D2B039 /* ChooseDayController.storyboard in Resources */,
 				D611534B1BEE1C0F00655F71 /* Assets.xcassets in Resources */,
-				D61153491BEE1C0F00655F71 /* Main.storyboard in Resources */,
+				D683B6F11BEE1D9800D2B039 /* SetAlarmDetailViewController.storyboard in Resources */,
+				D683B6EF1BEE1D6D00D2B039 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61153461BEE1C0F00655F71 /* ViewController.swift in Sources */,
+				D683B6EC1BEE1D5F00D2B039 /* SetAlarmDetailViewController.swift in Sources */,
+				D683B6E01BEE1D2600D2B039 /* AlarmListCellModel.swift in Sources */,
+				D683B6E81BEE1D4E00D2B039 /* GAUtils.swift in Sources */,
+				D683B6EA1BEE1D5900D2B039 /* ChooseDayController.swift in Sources */,
+				D683B6E41BEE1D3D00D2B039 /* AlarmListViewController.swift in Sources */,
 				D61153441BEE1C0F00655F71 /* AppDelegate.swift in Sources */,
+				D683B6DE1BEE1D1600D2B039 /* AlarmListCell.swift in Sources */,
+				D683B6E21BEE1D3400D2B039 /* AlarmModelManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +325,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D61153471BEE1C0F00655F71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D61153481BEE1C0F00655F71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D611534C1BEE1C0F00655F71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D611534D1BEE1C0F00655F71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D683B6ED1BEE1D6D00D2B039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D683B6EE1BEE1D6D00D2B039 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +514,7 @@
 				D611536A1BEE1C0F00655F71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D611536B1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +523,7 @@
 				D611536D1BEE1C0F00655F71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D611536E1BEE1C0F00655F71 /* Build configuration list for PBXNativeTarget "GreatfulAlarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +532,7 @@
 				D61153701BEE1C0F00655F71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
