@@ -10,7 +10,7 @@ import UIKit
 
 class AlarmModelManager {
     static let sharedManger = AlarmModelManager()
-    var alarmModels : [AlarmListCellModel] = []
+    var alarmModels : [Alarm] = []
     
     func save(){
         let userDefaults = NSUserDefaults.standardUserDefaults()

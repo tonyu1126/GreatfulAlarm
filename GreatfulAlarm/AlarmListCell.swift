@@ -13,9 +13,9 @@ class AlarmListCell : UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var alarmSwitch: UISwitch!
     
-    var m : AlarmListCellModel! {
+    var m : Alarm! {
         didSet {
-            self.timeLabel.text = GAUtils.sharedUtils.changeDateToString(m.setTime)
+            self.timeLabel.text = GAUtils.sharedUtils.changeDateToString(m.setTime!)
         }
     }
     

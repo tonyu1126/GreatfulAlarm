@@ -13,17 +13,7 @@ class AlarmListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "AlarmList"
-        let date: NSDate = NSDate()
-        let cal: NSCalendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
-        let comp: NSDateComponents = cal.components(
-            [NSCalendarUnit.Weekday],
-            fromDate: date
-        )
-        let weekday: Int = comp.weekday
-        let formatter: NSDateFormatter = NSDateFormatter()
-        formatter.locale = NSLocale(localeIdentifier: "ja")
-        print(weekday)
-        print(formatter.weekdaySymbols[weekday - 6])
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -44,6 +34,13 @@ class AlarmListViewController: UITableViewController {
         cell.m = AlarmModelManager.sharedManger.alarmModels[indexPath.row]
         return cell
     }
+    
+    @IBAction func addButtonTapped(_: UIBarButtonItem) {
+        let vc = SetAlarmDetailViewController.instantiate()
+        let nav = UINavigationController(rootViewController: vc)
+        self.navigationController?.presentViewController(nav, animated: true, completion: nil)
+    }
+    
     
 
 }
