@@ -9,18 +9,25 @@
 import UIKit
 
 class AlarmListViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "AlarmList"
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableView:", name: "ReloadTopViewTable", object: nil)
+        let nc = NSNotificationCenter.defaultCenter()
+        nc.addObserver(self, selector: "reloadTableView:", name: "ReloadTopViewTable", object: nil)
+        nc.addObserver(self, selector: "setAlarmNotification:", name: "applicationDidEnterBackground", object: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func reloadTableView (_ : NSNotification) {
-        print(AlarmModelManager.sharedManager.alarmModels)
         self.tableView.reloadData()
     }
+    
+    func setAlarmNotification(_ : NSNotification) {
+        AlarmModelManager.sharedManager.setAlarmNotifications()
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,10 +55,11 @@ class AlarmListViewController: UITableViewController {
     
     @IBAction func deleteButtonTapped(_: UIBarButtonItem) {
         if let indexPath =  self.tableView.indexPathForSelectedRow{
-           AlarmModelManager.sharedManager.delete(indexPath.row)
+            AlarmModelManager.sharedManager.delete(indexPath.row)
+            self.tableView.reloadData()
         }
     }
     
-
+    
 }
 

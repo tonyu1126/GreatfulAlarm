@@ -22,7 +22,22 @@ class AlarmModelManager {
         self.alarmModels.append(alarm)
     }
     
-    func delete(indexes : Int) {
-        
+    func delete(index : Int) {
+        self.alarmModels.removeAtIndex(index)
     }
+    
+    func setAlarmNotifications() {
+        let availableAlarm = self.alarmModels.filter({$0.isOn == true})
+        for alarm in availableAlarm {
+        let notification = UILocalNotification()
+        notification.fireDate = NSDate(alarm.setTime)//５秒後
+        notification.timeZone = NSTimeZone.localTimeZone()
+        notification.alertBody = "WakeUp"
+        notification.alertAction = "OK"
+        notification.soundName = "\(alarm.soundFile?.path.pathComponents?.last)"
+        UIApplication.sharedApplication().scheduleLocalNotification(notification);
+        }
+    }
+    
+    
 }

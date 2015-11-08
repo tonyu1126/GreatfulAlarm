@@ -22,6 +22,7 @@ class SoundCell : UITableViewCell, AVAudioPlayerDelegate {
         didSet{
             self.audioPlayer = try? AVAudioPlayer(contentsOfURL: soundFile!.path)
             self.audioPlayer?.prepareToPlay()
+            self.audioPlayer!.delegate = self
             self.titleLabel.text = soundFile!.name
         }
     }
@@ -34,6 +35,12 @@ class SoundCell : UITableViewCell, AVAudioPlayerDelegate {
         } else {
             self.audioPlayer?.play()
             self.soundControllButton.selected = true
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        if flag && self.soundControllButton.selected {
+            self.soundControllButton.selected = false
         }
     }
     
