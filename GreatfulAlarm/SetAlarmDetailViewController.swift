@@ -48,6 +48,10 @@ class SetAlarmDetailViewController : UIViewController, UITableViewDelegate, UITa
         self.alarm.setTime = self.datePicker.date
         self.alarm.isOn = true
         if self.alarm.repeatedday == nil || self.alarm.soundFile == nil {
+            let alert = UIAlertController(title: nil, message: "全部入力してからSave押してください", preferredStyle: UIAlertControllerStyle.Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alert.addAction(defaultAction)
+            self.presentViewController(alert, animated: true, completion: nil)
             return
         }
         AlarmModelManager.sharedManager.insert(self.alarm)
