@@ -11,13 +11,13 @@ import Foundation
 class Alarm {
     var setTime : NSDate?
     var isOn    : Bool?
-    var soundType : String?
+    var soundFile : SoundFile?
     var repeatedday : [Int]?
     
     init(AlarmData:Dictionary<String, AnyObject>){
         self.setTime = AlarmData["setTime"] as? NSDate
         self.isOn    = AlarmData["isOn"] as? Bool
-        self.soundType    = AlarmData["soundType"] as? String
+        self.soundFile    = AlarmData["soundFile"] as? SoundFile
         self.repeatedday   = AlarmData["repeatedDay"] as? [Int]
     }
     

@@ -9,12 +9,20 @@
 import UIKit
 
 class AlarmModelManager {
-    static let sharedManger = AlarmModelManager()
+    static let sharedManager = AlarmModelManager()
     var alarmModels : [Alarm] = []
     
     func save(){
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setValue(self.alarmModels, forKey: "AlarmSettings")
         userDefaults.synchronize()
+    }
+    
+    func insert(alarm:Alarm){
+        self.alarmModels.append(alarm)
+    }
+    
+    func delete(indexes : Int) {
+        
     }
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1jT-w4-sJn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Sound Table View Controller-->
+        <scene sceneID="IeH-BB-Pd5">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseSoundTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1jT-w4-sJn" customClass="ChooseSoundTableViewController" customModule="GreatfulAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uwh-ra-fSe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoundCell" id="Te7-MB-ULw" customClass="SoundCell" customModule="GreatfulAlarm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Te7-MB-ULw" id="eKK-Ai-hJF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-EJ-NCF">
+                                            <rect key="frame" x="21" y="14" width="31" height="14.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCS-e4-zF1">
+                                            <rect key="frame" x="535" y="-0.5" width="45" height="45"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="XCS-e4-zF1" secondAttribute="height" multiplier="1:1" id="hEZ-9E-XYo"/>
+                                                <constraint firstAttribute="height" constant="45" id="mrp-U8-pIS"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="5" minY="2" maxX="5" maxY="8"/>
+                                            <state key="normal" image="icn_play"/>
+                                            <state key="selected" image="icn_stop"/>
+                                            <connections>
+                                                <action selector="soundControllButtonDidTouchDown:" destination="Te7-MB-ULw" eventType="touchDown" id="sDF-Oz-yIw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="6Z6-EJ-NCF" firstAttribute="leading" secondItem="eKK-Ai-hJF" secondAttribute="leadingMargin" constant="13" id="17Q-yF-oiz"/>
+                                        <constraint firstItem="6Z6-EJ-NCF" firstAttribute="centerY" secondItem="eKK-Ai-hJF" secondAttribute="centerY" id="M0r-FQ-v4A"/>
+                                        <constraint firstItem="XCS-e4-zF1" firstAttribute="centerY" secondItem="eKK-Ai-hJF" secondAttribute="centerY" id="P6m-iw-Zea"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="XCS-e4-zF1" secondAttribute="trailing" constant="12" id="hVO-4E-9QS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="soundControllButton" destination="XCS-e4-zF1" id="Gys-gi-c5G"/>
+                                    <outlet property="titleLabel" destination="6Z6-EJ-NCF" id="aTa-oI-2OT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1jT-w4-sJn" id="jIV-9l-k0j"/>
+                            <outlet property="delegate" destination="1jT-w4-sJn" id="Gp4-3A-8TX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETr-Hh-IrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_play" width="64" height="64"/>
+        <image name="icn_stop" width="128" height="128"/>
+    </resources>
+</document>

@@ -16,6 +16,7 @@ class AlarmListCell : UITableViewCell {
     var m : Alarm! {
         didSet {
             self.timeLabel.text = GAUtils.sharedUtils.changeDateToString(m.setTime!)
+            self.statusLabel.text = GAUtils.sharedUtils.dayOftheWeekFromIndex(m.repeatedday!)
         }
     }
     

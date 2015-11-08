@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ChooseDayTableView: class {
+protocol ChooseDayTableViewDelegate: class {
     func chooseDay(chooseDay:ChooseDayTableViewController, choosendatesIndexes indexes:[Int])
 }
 
 class ChooseDayTableViewController : UITableViewController {
     
-    weak var delegate : ChooseDayTableView?
+    weak var delegate : ChooseDayTableViewDelegate?
     
     class func instantiate() -> ChooseDayTableViewController {
         let storyBoard = UIStoryboard(name: "ChooseDayTableView", bundle: NSBundle.mainBundle())
@@ -46,7 +46,7 @@ class ChooseDayTableViewController : UITableViewController {
     
     //TODO: ここらへんも全般的にtagとか使って相当横着してるのでカスタムセルいつか作ろう
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("chooseDayCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ChooseDayCell", forIndexPath: indexPath) as UITableViewCell
         let titleLabel = cell.viewWithTag(1) as? UILabel
         titleLabel?.text = GAUtils.dateFormatter.weekdaySymbols[indexPath.row]
         return cell
