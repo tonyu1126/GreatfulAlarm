@@ -30,7 +30,7 @@ class AlarmModelManager {
         let availableAlarm = self.alarmModels.filter({$0.isOn == true})
         for alarm in availableAlarm {
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(alarm.setTime)//５秒後
+        notification.fireDate = alarm.setTime
         notification.timeZone = NSTimeZone.localTimeZone()
         notification.alertBody = "WakeUp"
         notification.alertAction = "OK"
