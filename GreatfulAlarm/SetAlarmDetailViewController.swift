@@ -27,7 +27,6 @@ class SetAlarmDetailViewController : UIViewController, UITableViewDelegate, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "SetAlarmDetail"
         let rightbtn = UIBarButtonItem(title: "save", style: UIBarButtonItemStyle.Plain, target: self, action: "saveAlarm:")
         self.navigationItem.rightBarButtonItem = rightbtn
         let leftbtn = UIBarButtonItem(title: "cancel", style: UIBarButtonItemStyle.Plain, target: self, action: "closeView:")
@@ -44,6 +43,7 @@ class SetAlarmDetailViewController : UIViewController, UITableViewDelegate, UITa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell!
+        //TODO: tagとか使って相当横着してるのでカスタムセルいつか作ろう
         if indexPath.section == 0 {
             cell = tableView.dequeueReusableCellWithIdentifier("detailCell", forIndexPath: indexPath) as UITableViewCell
             let titleLabel = cell.viewWithTag(1) as? UILabel
@@ -65,6 +65,13 @@ class SetAlarmDetailViewController : UIViewController, UITableViewDelegate, UITa
             return 2
         } else {
             return 1
+        }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 0 {
+            let vc = ChooseDayTableViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

@@ -1,27 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rIT-Ki-tYd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Choose Day Controller-->
+        <!--ChooseDayTableView-->
         <scene sceneID="HXN-c3-dgX">
             <objects>
-                <tableViewController id="rIT-Ki-tYd" customClass="ChooseDayController" customModule="GreatfulAlarm" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a9o-In-AeL">
+                <tableViewController title="ChooseDayTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rIT-Ki-tYd" customClass="ChooseDayTableViewController" customModule="GreatfulAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a9o-In-AeL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionCell" id="iEo-Sd-UGr" customClass="chooseOptionTableCell" customModule="GreatfulAlarm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="chooseDayCell" id="iEo-Sd-UGr">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iEo-Sd-UGr" id="ssp-nn-uZU">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-85-cHN">
+                                            <rect key="frame" x="15" y="11" width="42" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_check" translatesAutoresizingMaskIntoConstraints="NO" id="pme-pF-BbV">
+                                            <rect key="frame" x="558" y="9.5" width="25" height="25"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="RXN-07-Klg"/>
+                                                <constraint firstAttribute="width" secondItem="pme-pF-BbV" secondAttribute="height" multiplier="1:1" id="dle-g2-MtQ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pme-pF-BbV" secondAttribute="trailing" constant="9" id="5t8-3t-oHf"/>
+                                        <constraint firstItem="kiO-85-cHN" firstAttribute="leading" secondItem="ssp-nn-uZU" secondAttribute="leadingMargin" constant="7" id="DNK-hf-jV7"/>
+                                        <constraint firstItem="kiO-85-cHN" firstAttribute="centerY" secondItem="ssp-nn-uZU" secondAttribute="centerY" id="nwH-fd-fVF"/>
+                                        <constraint firstItem="pme-pF-BbV" firstAttribute="centerY" secondItem="ssp-nn-uZU" secondAttribute="centerY" id="vua-ch-d42"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                             </tableViewCell>
@@ -37,4 +62,7 @@
             <point key="canvasLocation" x="262" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icn_check" width="64" height="64"/>
+    </resources>
 </document>

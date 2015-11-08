@@ -8,10 +8,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--SetAlarmDetailView-->
+        <!--Set Alarm Detail View Controller-->
         <scene sceneID="iC7-GL-xJs">
             <objects>
-                <viewController storyboardIdentifier="SetAlarmDetailView" title="SetAlarmDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wLl-sW-KEp" customClass="SetAlarmDetailViewController" customModule="GreatfulAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetAlarmDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wLl-sW-KEp" customClass="SetAlarmDetailViewController" customModule="GreatfulAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MOg-kr-MIy"/>
                         <viewControllerLayoutGuide type="bottom" id="1tD-ji-NyA"/>
