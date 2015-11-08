@@ -27,15 +27,17 @@ class AlarmModelManager {
     }
     
     func setAlarmNotifications() {
+        UIApplication.sharedApplication().cancelAllLocalNotifications();
         let availableAlarm = self.alarmModels.filter({$0.isOn == true})
         for alarm in availableAlarm {
-        let notification = UILocalNotification()
-        notification.fireDate = alarm.setTime
-        notification.timeZone = NSTimeZone.localTimeZone()
-        notification.alertBody = "WakeUp"
-        notification.alertAction = "OK"
-        notification.soundName = "\(alarm.soundFile?.path.pathComponents?.last)"
-        UIApplication.sharedApplication().scheduleLocalNotification(notification);
+            let notification = UILocalNotification()
+            notification.fireDate = alarm.setTime
+            notification.repeatInterval = NSCalendarUnit.Weekday
+            notification.timeZone = NSTimeZone.localTimeZone()
+            notification.alertBody = "WakeUp"
+            notification.alertAction = "OK"
+            notification.soundName = "\(alarm.soundFile?.path.pathComponents?.last)"
+            UIApplication.sharedApplication().scheduleLocalNotification(notification);
         }
     }
     
