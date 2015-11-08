@@ -87,11 +87,6 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="LvL-v6-gVp">
-                        <barButtonItem key="leftBarButtonItem" title="delete" id="i1y-gk-8N1">
-                            <connections>
-                                <action selector="deleteButtonTapped:" destination="KzK-hu-pXo" id="6EA-EA-IIh"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="add" id="RlG-1H-otR">
                             <connections>
                                 <action selector="addButtonTapped:" destination="KzK-hu-pXo" id="BHC-Iu-LcR"/>

@@ -27,7 +27,12 @@ class AlarmListViewController: UITableViewController {
         AlarmModelManager.sharedManager.setAlarmNotifications()
     }
     
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete){
+            AlarmModelManager.sharedManager.delete(indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,13 +56,6 @@ class AlarmListViewController: UITableViewController {
         let vc = SetAlarmDetailViewController.instantiate()
         let nav = UINavigationController(rootViewController: vc)
         self.navigationController?.presentViewController(nav, animated: true, completion: nil)
-    }
-    
-    @IBAction func deleteButtonTapped(_: UIBarButtonItem) {
-        if let indexPath =  self.tableView.indexPathForSelectedRow{
-            AlarmModelManager.sharedManager.delete(indexPath.row)
-            self.tableView.reloadData()
-        }
     }
     
     
